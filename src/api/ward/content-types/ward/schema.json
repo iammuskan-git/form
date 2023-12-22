@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wards",
+  "info": {
+    "singularName": "ward",
+    "pluralName": "wards",
+    "displayName": "Ward",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "muncipality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::muncipality.muncipality"
+    },
+    "name": {
+      "type": "json"
+    }
+  }
+}

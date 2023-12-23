@@ -12,13 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "muncipality": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::muncipality.muncipality"
-    },
     "name": {
-      "type": "json"
+      "type": "integer"
     }
   }
 }

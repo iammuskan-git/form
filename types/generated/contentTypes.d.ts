@@ -979,12 +979,7 @@ export interface ApiWardWard extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    muncipality: Attribute.Relation<
-      'api::ward.ward',
-      'oneToOne',
-      'api::muncipality.muncipality'
-    >;
-    name: Attribute.JSON;
+    name: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::ward.ward', 'oneToOne', 'admin::user'> &
